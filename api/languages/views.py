@@ -3,6 +3,8 @@ from rest_framework import viewsets, permissions
 from .models import Language, Family, Countries
 from .serializers import LanguageSerializer, FamilySerializer, CountrySerializer
 
+# HyperlinkedModelViewSet or ModelViewSet
+
 class LanguageView(viewsets.ModelViewSet):
     queryset = Language.objects.all()
     serializer_class = LanguageSerializer
